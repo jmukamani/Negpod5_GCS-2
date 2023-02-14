@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+import random
+import math
+
+#Generate two random numbers
+num1 = random.randint(1, 100000)
+num2 = random.randint(1, 100000)
+
+#calculate square root and  print
+sqrt1 = int(math.sqrt(num1))
+sqrt2 = int(math.sqrt(num2))
+print("The first random number generated is", num1)
+print("The square root is", sqrt1)
+
+print("The second random number generated is", num2)
+print("The square root is", sqrt2)
+
+#sum of square roots
+sum_sqrt = sqrt1 + sqrt2
+print("The sum of their square root is", sum_sqrt)

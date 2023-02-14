@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#File name that starts with today's date
+echo -e "one\ntwo\nthree\nfour\nfive" > $(date +"%Y-%m-%d"0)-file.txt

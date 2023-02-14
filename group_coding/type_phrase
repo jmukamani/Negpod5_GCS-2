@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo "Please type a phrase: "
+read phrase
+words=$(echo "$phrase" | wc -w)
+spaces=$(echo "$phrase" | tr -cd ' ' | wc -c)
+
+echo "The number of words is $words"
+echo "The number of white spaces is $spaces"

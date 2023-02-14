@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#prints thr strings apperaring on separeate lines
+#prints the strings apperaring on separeate lines
 
 echo -e "one\ntwo\nthree\nfour\nfive"
 

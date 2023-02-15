@@ -1,0 +1,18 @@
+#/usr/bin/env bash
+#Read list of names
+names_file="names.txt"
+names=$(cat $names_file)
+
+#Read the message template
+template_file="message_template.txt"
+template=$(cat $template_file)
+
+#Create personalized message
+for name in $names
+do
+	message=$(echo "$template" | sed "s/Recipeints_Name/$name/g")
+#write personalized message
+	echo "$message" > "${name}.txt"
+done
+
+echo "Personalized message has been created"

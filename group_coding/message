@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo -e "Happy New Year Recipeints_Name!\nMay the coming year be full of grand adventures and opportunities." > message_template.txt

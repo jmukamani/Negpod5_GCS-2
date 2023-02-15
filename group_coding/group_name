@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo -e "Dimitri\nSamuel\nHonore\nAnesu\nBenitha\nKen\nOchan" >names.txt

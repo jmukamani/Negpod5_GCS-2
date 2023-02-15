@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#Get the path
+read -p "Enter a path: " path
+
+#check if path is a directory
+if [ -d "$path" ]; then
+	echo "List of files in directory $path:"
+	ls "$path"
+else
+	echo "$path is not a directory"
+	read -p "Please enter path to the directory: " new path
+
+#checks again if the path provide is a directory
+	if [ -d "$new_path" ]; then
+		echo "List of files in directory $new_path:"
+		ls "$new_path"
+	else
+		echo "$new_path is not a directory."
+		exit 1
+	fi
+fi

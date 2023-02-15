@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#asks user to input two numbers
+echo "Please enter the first number: "
+read num1
+
+echo "Please enter the second number: "
+read num2
+
+#calculate product of the two numbers
+product=$(expr $num1 \* $num2)
+
+#Output the product
+echo "The product of $num1 and $num2 is $product"
